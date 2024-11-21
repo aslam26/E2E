@@ -73,7 +73,6 @@ public class BaseTest {
     @Parameters("browserType")
     @BeforeClass
     public void setUp(String browserType) throws Exception {
-        //String browserType= prop.getProperty("browserType");
         cmdDriver=new CommonDrivers(browserType);
         driver= cmdDriver.getDriver();
 
