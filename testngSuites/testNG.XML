@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="End to End Web-app Automation">
+    <test name="LoginPage navigation --chrome">
+        <parameter name="browserType" value="chrome" />
+        <classes>
+            <class name="com.juiceshopherokuapp.Tests.EndToEndTest"/>
+        </classes>
+    </test>
+    <test name="LoginPage navigation -- edge">
+        <parameter name="browserType" value="edge" />
+        <classes>
+            <class name="com.juiceshopherokuapp.Tests.EndToEndTest"/>
+        </classes>
+    </test>
+    <test name="LoginPage navigation-- headless">
+        <parameter name="browserType" value="headless" />
+        <classes>
+            <class name="com.juiceshopherokuapp.Tests.EndToEndTest"/>
+        </classes>
+    </test>
+</suite>
